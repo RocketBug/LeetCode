@@ -1,3 +1,4 @@
+#problem url https://leetcode.com/problems/jewels-and-stones/
 from collections import Counter
 class Solution:
     def numJewelsInStones(self, J: str, S: str) -> int:
