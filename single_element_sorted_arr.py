@@ -1,7 +1,8 @@
 # problem url https://leetcode.com/explore/challenge/card/may-leetcoding-challenge/535/week-2-may-8th-may-14th/3327/
 # similar to single_number.py
 
-# The solution below will work, but it is not O(logN)
+# The solution below is based on the same logic as single_number.py
+# but it does not meet the time complexity of O(logN)
 class Solution:
     def singleNonDuplicate(self, nums: List[int]) -> int:
         i = 0
