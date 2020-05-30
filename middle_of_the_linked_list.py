@@ -7,23 +7,10 @@
 
 class Solution:
     def middleNode(self, head: ListNode) -> ListNode:
-        if head.next == None:
-            return head
-        
-        ptr_ctr = 1
-        ptr = head
-        
-        while ptr.next:
-            ptr = ptr.next
-            ptr_ctr += 1
+        slow = fast = head
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
             
-        mid = (ptr_ctr//2)+1
-        
-        for i in range(mid-1):
-            head = head.next            
-        
-        return head
-        
-        
-        
-        
+        return slow
+    
